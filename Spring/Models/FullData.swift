@@ -31,7 +31,7 @@ struct FullData {
         static func getAnimation() -> FullData {
                 FullData(
                     preset: DataStore.shared.presets.randomElement()?.rawValue ?? "slideLeft",
-                    curve: DataStore.shared.curves.randomElement()?.rawValue ?? "easeIn",
+                    curve: DataStore.shared.curves.randomElement()?.rawValue ?? "spring",
                     force: Double.random(in: 0.5...1),
                     duration: Double.random(in: 0.5...1.2),
                     delay: 0.5

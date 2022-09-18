@@ -9,8 +9,13 @@ import UIKit
 import SpringAnimation
 
 class AnimationViewController: UIViewController {
+    
     @IBOutlet var fullDataLabel: UILabel!
     @IBOutlet var animationView: SpringView!
+    
+    override func viewDidLoad() {
+        fullDataLabel.text = animation.fulldata
+    }
        
     
     
@@ -27,6 +32,7 @@ class AnimationViewController: UIViewController {
         animationView.delay = animation.delay
         animationView.animate()
       
+        
     }
 }
 
